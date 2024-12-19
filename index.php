@@ -1,49 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Library CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="./style/reset.css" rel="stylesheet">
+        <link href="./style/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <title>Kenko</title>
     </head>
     <body>
-        <?php $recettePouletActive = true; ?> 
+        
+        <h1>Affichage des recettes</h1>
 
-            <?php if ($recettePouletActive) : ?>
-                <h1>Liste des ingrédients</h1>
-            <?php endif; ?> 
+      <?php
+        $recettes = [
+            [
+                'titre' => 'Cassoulet <br />',
+                'recette' => 'Étape 1 : Mettre les flageolets à tremper toute une nuit, <br />Étape 2 : Mettre les flageolets avec les tomates ... <br />',
+                'auteur' => 'chrisrodriguez@hotmail.be',
+                'estActive' => true,
+            ],
+            [
+                'titre' => 'Couscous <br />',
+                'recette' => 'Étape 1 : Mettre les légumes dans la casserole, <br />Étape 2 : Mettre la viandes ... <br />',
+                'auteur' => 'ginettemanfroid@hotmail.be',
+                'estActive' => false,
+            ],
+            [
+                'titre' => 'Cassoulet <br />',
+                'recette' => 'Étape 1 : Mettre les flageolets à tremper toute une nuit, <br />Étape 2 : Mettre les flageolets avec les tomates ... <br />',
+                'auteur' => 'chrisrodriguez@hotmail.be',
+                'estActive' => true,
+            ],
+            [
+                'titre' => 'Escalope Milanaise <br />',
+                'recette' => 'Étape 1 : Paner les tranches de viande, <br />Étape 2 : Mettre la viandes ... <br />',
+                'auteur' => 'jeandujardin@hotmail.be',
+                'estActive' => false,
+            ],
+        ];
 
-        <?php
-          //User 1:
-          $nom1 = 'Christel Rodriguez';
-          $mail1 = 'chrisrodriguez@hotmail.be';
-          $mdp1 = 'ffy412';
-          $age1 = 43;
-          //User 2:
-          $nom2 = 'Michaël Merlette';
-          $mail2 = 'michael@hotmail.be';
-          $mdp2 = 'ffy412ffy412';
-          $age2 = 47;
-          //User 3:
-          $nom3 = 'Victoria Merlette';
-          $mail3 = 'victoria@hotmail.be';
-          $mdp3 = 'ffy413ffy413';
-          $age3 = 7;
-          //User 4:
-          $nom4 = 'Sacha Merlette';
-          $mail4 = 'sacha@hotmail.be';
-          $mdp4 = 'ffy414ffy41';
-          $age4 = 6;
-
-          $Chris = ['Christel Rodriguez', 'chrisrodriguez@hotmail.be', 'ffy412', '43'];
-          $Michael = ['Michaël Merlette', 'michael@hotmail.be', 'ffy412ffy412', '47'];
-          $Vicky = ['Victoria Merlette', 'victorai@hotmail.com', 'ffy413ffy413', '7'];
-          $Sachou = ['Sacha Merlette', 'sacha@hotmail.be', 'ffy414ffy41', '6'];
-
-          $allUsers = [$Chris, $Michael, $Vicky, $Sachou];
-
-          echo $allUsers[2][0];
-
-        ?>
+        if (array_key_exists('titre', $recettes)) {
+            echo 'La clé "titre" se trouve dans le tableau !';
+        };
+      ?>
         
     </body>
 </html>
