@@ -45,7 +45,7 @@
         <main>
             <div class="conatiner">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 text-center">
                     <h1 class="caveatTitle text-center my-5">Affichage des recettes</h1>
 
                     <!-- Boucle sur les recettes -->
@@ -60,6 +60,31 @@
                                 </article>
                             <?php endif; ?>
                         <?php endforeach ?>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center my-5">
+                        <h3 class="my-5">Les fonctions</h3>
+                     
+                        <?php
+                            $recette = 'Etape 1 : des flageolets ! Etape 2 : de la saucisse';
+                            $longueur = strlen($recette);
+
+                            echo 'La phrase contient ' . $longueur .'caractères : ' . PHP_EOL . $recette;
+                            echo "<br />";
+                        ?>
+                        <?php
+                            echo str_replace('c', 'C', 'Le cassoulet c\'est très bon !');
+                            echo "<br />";
+                            $jour = date('d');
+                            $mois = date('m');
+                            $annee = date('Y');
+                            //Récup de l'heure :
+                            $heure = date('H');
+                            $minutes = date('i');
+
+                            echo 'Nous le :' . $jour . '/' . $mois . '/' . $annee . " " . 'Et il est : ' . $heure . ':' . $minutes . PHP_EOL;
+                        ?>
                     </div>
                 </div>
             </div>
