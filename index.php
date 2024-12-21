@@ -83,7 +83,33 @@
                             $heure = date('H');
                             $minutes = date('i');
 
-                            echo 'Nous le :' . $jour . '/' . $mois . '/' . $annee . " " . 'Et il est : ' . $heure . ':' . $minutes . PHP_EOL;
+                            echo 'Nous sommes le :' . $jour . '/' . $mois . '/' . $annee . " " . 'Et il est : ' . $heure . ':' . $minutes . PHP_EOL;
+                            echo "<br />";
+
+                            function recetteOK (array $recette) : bool {
+                                if (array_key_exists('estActive', $recette)) {
+                                    $result = $recette['estActive'];
+                                } else {
+                                    $result = false;
+                                }
+
+                                return $result;
+                            };
+
+                            $recetteCouscous = [
+                                        'titre' => 'Couscous <br />',
+                                        'recette' => 'Étape 1 : Mettre les légumes dans la casserole, <br />Étape 2 : Mettre la viandes ... <br />',
+                                        'auteur' => 'ginettemanfroid@hotmail.be',
+                                        'estActive' => false,
+                            ];
+                            $recetteCassoulet = [
+                                        'titre' => 'Cassoulet <br />',
+                                        'recette' => 'Étape 1 : Mettre les flageolets à tremper toute une nuit, <br />Étape 2 : Mettre les flageolets avec les tomates ... <br />',
+                                        'auteur' => 'chrisrodriguez@hotmail.be',
+                                        'estActive' => true,
+                            ];
+
+                            $recetteCouscousOK = recetteOK($recetteCassoulet);
                         ?>
                     </div>
                 </div>
