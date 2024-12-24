@@ -16,23 +16,52 @@ body
     background-color: var(--beige);
 }
 
-h3
+/*  Nav  */
+nav
 {
-    font-size: 2em;
-    color: var(--bleu);
-    font-family: "caveat", serif;
+    height: 150px;
 }
 
-p
+nav .nav-link
+{
+    color: var(--noir);
+    font-size: 1.5em;
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+
+nav .nav-link:hover
+{
+    color: var(--bleu);
+    padding-bottom: 20px;
+    border-bottom-color: var(--bleu);
+}
+/* END Nav */
+
+/* Home */
+main .home
+{
+    height: 1200px;
+    position: relative;
+}
+
+main .mainContent
+{
+    position: absolute;
+    top: 30%;
+}
+
+.mainContent .mainTitle
 {
     font-family: "Bodoni Moda", serif;
-    font-size: 1.2em;
-    color: var(--bleuF);
+    font-size: 16rem;
+    color: var(--noir);
 }
 
-.caveatTitle
+.mainContent .secondTitle
 {
-    font-size: 3em;
-    color: var(--bleu);
-    font-family: "caveat", serif;
+    font-family: "Bodoni Moda", serif;
+    font-size: 4rem;
+    color: var(--noir);
 }
+
