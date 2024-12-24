@@ -36,6 +36,12 @@ nav .nav-link:hover
     padding-bottom: 20px;
     border-bottom-color: var(--bleu);
 }
+
+#logo
+{
+    height: 5em;
+    width: 5em;
+}
 /* END Nav */
 
 /* Home */
@@ -50,6 +56,43 @@ main .mainContent
     position: absolute;
     top: 30%;
 }
+
+ /* Animation mainTitle */
+h1:after
+{
+    content: "";
+    animation: reveal 1.5s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal 
+{
+    0% 
+    {
+        content: "K";
+    }
+
+    25%
+    {
+        content: "KE";
+    }
+
+    50%
+    {
+        content: "KEN";
+    }
+
+    75%
+    {
+        content: "KENK";
+    }
+
+    100%
+    {
+        content: "KENKO";
+    }
+}
+ /* END Animation mainTitle */
 
 .mainContent .mainTitle
 {
