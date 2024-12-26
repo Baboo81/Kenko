@@ -16,6 +16,7 @@ body
     background-color: var(--beige);
     width: 100% !important;
     overflow-x: hidden;
+    font-family: "Bodoni Moda", serif;
 }
 
 h3
