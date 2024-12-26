@@ -9,16 +9,24 @@
     --noir : #282828;
 }
 
+
+
 body
 {
     background-color: var(--beige);
     width: 100% !important;
+    overflow-x: hidden;
 }
 
 h3
 {
     color: white;
-    font-size: 3em;
+    font-size: 6em;
+}
+
+.fontBeige
+{
+    color: var(--beige);
 }
 
 .bg-grey
