@@ -21,6 +21,16 @@ h3
     font-size: 3em;
 }
 
+.bg-grey
+{
+    background-color: var(--gris);
+}
+
+
+.bg-blue
+{
+    background-color: var(--grisF);
+}
 /*  Nav  */
 nav
 {
