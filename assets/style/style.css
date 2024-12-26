@@ -15,6 +15,12 @@ body
     width: 100% !important;
 }
 
+h3
+{
+    color: white;
+    font-size: 3em;
+}
+
 /*  Nav  */
 nav
 {
