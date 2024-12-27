@@ -19,6 +19,12 @@ body
     font-family: "Bodoni Moda", serif;
 }
 
+p
+{
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
 h3
 {
     color: white;
