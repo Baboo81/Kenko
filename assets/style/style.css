@@ -154,7 +154,6 @@ main .mainSection
 {
     background-color: var(--gris);
     height: 800px;
-    margin-top: 5% !important;
 }
 
 .mainSection .card
