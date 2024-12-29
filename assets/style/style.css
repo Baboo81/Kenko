@@ -41,7 +41,6 @@ h3
     background-color: var(--gris);
 }
 
-
 .bg-blue
 {
     background-color: var(--grisF);
@@ -154,7 +153,8 @@ main .mainSection
 .mainSection .part2
 {
     background-color: var(--gris);
-    height: 1000px;
+    height: 800px;
+    margin-top: 5% !important;
 }
 
 .mainSection .card
@@ -164,8 +164,75 @@ main .mainSection
 
 .mainSection .card:hover
 {
-    transform: scale(1.02);
+    transform: scale(1.01);
     transition: transform 330ms ease-in;
 }
+
+.button
+{
+    position: relative;
+    padding: 10px 22px;
+    background: var(--noir);
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform .2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:active
+{
+    transform: scale(0.96);
+}
+
+.button::before,
+.button::after
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 150%;
+    border: 2px solid red;
+    background-repeat: no-repeat;
+}
+
+.button::before
+{
+    top: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle transparent 20%, #7d2ae8 20%, transparent 30%), radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10% #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),;
+    background-size: 10% 10%, 20% 20%, 15% 15, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 18% 18%;
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+        animation: topBubbles 0.6s ease-in-out infinite;
+}
+
+@keyframes topBubbles
+{
+    50% 
+    {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+
+    100%
+    {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+.button::after
+{
+    bottom: -70%;
+}
+
 /* END mainSection */
 
