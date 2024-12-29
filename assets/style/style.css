@@ -209,7 +209,7 @@ main .mainSection
     radial-gradient(circle, #7d2ae8 20%, transparent 20%),
     radial-gradient(circle, #7d2ae8 20%, transparent 20%),
     radial-gradient(circle, #7d2ae8 20%, transparent 20%),;
-    background-size: 10% 10%, 20% 20%, 15% 15, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 18% 18%;
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 18% 18%;
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
         animation: topBubbles 0.6s ease-in-out infinite;
 }
@@ -231,6 +231,21 @@ main .mainSection
 .button::after
 {
     bottom: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                      radial-gradient(circle,transparent 10%, #7d2ae8 15%, transparent 20%),
+                      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+                      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20 20%, 15% 15%, 20% 20%;
+    background-position: 10% 0%, 30% 10%, 55% 0%, 70% 0%, 85% 0%, 70% 0%;
+    animation: bottomBubbles 0.6s ease-in-out infinite;
+}
+
+@keyframes bottomBubbles
+{
+    
 }
 
 /* END mainSection */
