@@ -6,6 +6,7 @@
     --grisF : #8b9cb6;
     --gris : #bfc1c2;
     --beige : #f1efe9;
+    --brun : #e3c7af;
     --noir : #282828;
 }
 
@@ -171,7 +172,7 @@ main .mainSection
 {
     position: relative;
     padding: 10px 22px;
-    background: var(--noir);
+    background: var(--brun);
     border-radius: 6px;
     color: #fff;
     border: none;
@@ -196,22 +197,22 @@ main .mainSection
     transform: translateX(-50%);
     height: 100%;
     width: 150%;
-    border: 2px solid red;
+    z-index: -1;
     background-repeat: no-repeat;
 }
 
-.button::before
+.button.animate::before
 {
     top: -70%;
-    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%), radial-gradient(circle transparent 20%, #7d2ae8 20%, transparent 30%), radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, transparent 10% #7d2ae8 15%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-    radial-gradient(circle, #7d2ae8 20%, transparent 20%),;
+    background-image: radial-gradient(circle, var(--brun) 20%, transparent 20%), radial-gradient(circle transparent 20%, var(--brun) 20%, transparent 30%), radial-gradient(circle, var(--brun) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10% var(--brun) 15%, transparent 20%),
+    radial-gradient(circle, var(--brun) 20%, transparent 20%),
+    radial-gradient(circle, var(--brun) 20%, transparent 20%),
+    radial-gradient(circle, var(--brun) 20%, transparent 20%),
+    radial-gradient(circle, var(--brun) 20%, transparent 20%),;
     background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 18% 18%;
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-        animation: topBubbles 0.6s ease-in-out infinite;
+        animation: topBubbles 0.6s ease-in-out forwards;
 }
 
 @keyframes topBubbles
@@ -228,19 +229,19 @@ main .mainSection
     }
 }
 
-.button::after
+.button.animate::after
 {
     bottom: -70%;
-    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                      radial-gradient(circle,transparent 10%, #7d2ae8 15%, transparent 20%),
-                      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-image: radial-gradient(circle, var(--brun) 20%, transparent 20%),
+                      radial-gradient(circle,transparent 10%, var(--brun) 15%, transparent 20%),
+                      radial-gradient(circle, var(--brun) 20%, transparent 20%),
+                      radial-gradient(circle, var(--brun) 20%, transparent 20%),
+                      radial-gradient(circle, var(--brun) 20%, transparent 20%),
+                      radial-gradient(circle, var(--brun) 20%, transparent 20%),
+                      radial-gradient(circle, var(--brun) 20%, transparent 20%);
     background-size: 15% 15%, 20% 20%, 18% 18%, 20 20%, 15% 15%, 20% 20%;
     background-position: 10% 0%, 30% 10%, 55% 0%, 70% 0%, 85% 0%, 70% 0%;
-    animation: bottomBubbles 0.6s ease-in-out infinite;
+    animation: bottomBubbles 0.6s ease-in-out forwards;
 }
 
 @keyframes bottomBubbles
@@ -248,6 +249,12 @@ main .mainSection
     50%
     {
         background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+
+    100%
+    {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
 }
 
