@@ -245,7 +245,10 @@ main .mainSection
 
 @keyframes bottomBubbles
 {
-    
+    50%
+    {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
 }
 
 /* END mainSection */
