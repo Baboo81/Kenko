@@ -273,3 +273,15 @@ main .mainSection
 
 /* END mainSection */
 
+/* Footer */
+footer
+{
+  background-color: var(--brun);
+  height: 400px;
+}
+
+footer .picto
+{
+  height: 5em;
+  width: 5em;
+}
