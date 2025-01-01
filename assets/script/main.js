@@ -11,4 +11,4 @@ btn.addEventListener("click", (e) => {
     setTimeout(() => {
         btn.classList.remove("animate");
     }, 600) //1s = 1000ms
-});
+}); 
