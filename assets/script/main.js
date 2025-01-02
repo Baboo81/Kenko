@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'index.html':
             navBar.style.color = '#282828';
             break;
-        case 'kenko-ho.html':
+        case '../assets/src/views/kenko-ho.html':
             navBar.style.color = '#f1efe9';
             break;
-        case 'kenko-web.html':
+        case '../assets/src/views/kenko-web.html':
             navBar.style.color = '#f1efe9';
             break;
     }

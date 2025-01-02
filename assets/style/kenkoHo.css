@@ -3,6 +3,7 @@
 
 :root
 {
+    --vert : #536964;
     --grisF : #8b9cb6;
     --gris : #bfc1c2;
     --beige : #f1efe9;
@@ -18,16 +19,166 @@ body
     font-family: "Bodoni Moda", serif;
 }
 
+p
+{
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+h3
+{
+    color: white;
+    font-size: 6em;
+}
+
+.fontBeige
+{
+    color: var(--beige);
+}
+
+.fontBlack
+{
+  color: var(--noir);
+}
+
+.bg-grey
+{
+    background-color: var(--gris);
+}
+
+.bg-blue
+{
+    background-color: var(--grisF);
+}
+/*  Nav  */
+nav
+{
+    height: 150px;
+}
+
+nav .nav-link
+{
+    color: var(--noir);
+    font-size: 1.5em;
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+
+nav .nav-link:hover
+{
+    color: var(--bleu);
+    padding-bottom: 20px;
+    border-bottom-color: var(--bleu);
+}
+
+#logo
+{
+    height: 5em;
+    width: 5em;
+}
+/* END Nav */
+
+/* section Home */
+
+section .sections
+{
+    padding: 20px 0;
+}
+
+section .overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.home
+{
+    height: 1200px;
+    background-image: url(../img/jpeg/Kenko-Ho/kenko-ho.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .homeContent
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .homeTitle
+{
+    color: #fff;
+    font-size: 6em;
+}
+
+.home .homeDesc
+{
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+/* END section Home */
+
+/* section mainSection */
+.mainSection
+{
+    height: 2000px;
+}
+
+.mainTitleContent
+{
+    padding: 100px;
+}
+
+.mainSectionTitle
+{
+    font-size: 2.5em;
+}
+
+.line
+{
+    width: 900px;
+    background: var(--noir);
+    height: 3px;
+    margin: auto;
+    margin-top: -1%;
+}
+
+.line span
+{
+    display: block;
+    width: 700px;
+    height: 4px;
+    background: var(--grisF);
+    margin: auto;
+    position: relative;
+    bottom: 0.5px;
+}
+
+.mainSection .box1
+{
+    background-color: var(--grisF);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+/* END section mainSection */
+
 /* Btn animation */
 .button 
 {
   position: relative;
   padding: 10px 22px;
-  border-radius: 6px;
+  border-radius: 16px;
   border: none;
   color: #fff;
   cursor: pointer;
-  background-color: #7d2ae8;
+  background-color: var(--vert);
   transition: all 0.2s ease;
 }
 
@@ -115,3 +266,15 @@ body
 }
 /* END btn animation */
 
+/* Footer */
+footer
+{
+  background-color: var(--vert);
+  height: 700px;
+}
+
+#mapid
+{
+  height: 300px;
+  border-radius: 12px;
+}
