@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Définition de la couleur de typo en fct de la page :
     switch (currentPage) {
-        case 'index.html':
+        case './index.html':
             navBar.style.color = '#282828';
             break;
         case '../assets/src/views/kenko-ho.html':
