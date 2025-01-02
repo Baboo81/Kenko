@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
         case '../assets/src/views/kenko-web.html':
             navBar.style.color = '#f1efe9';
             break;
+            default:
+                navBar.style.color = '#f1efe9';
     }
 });
 

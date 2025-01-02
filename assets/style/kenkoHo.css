@@ -163,10 +163,11 @@ section .overlay
     bottom: 0.5px;
 }
 
-.mainSection .box1
+.mainSection .box
 {
-    background-color: var(--brun);
+    background-color: var(--gris);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-size: 1.3em;
 }
 
 .mainSection .doTERRA
@@ -333,7 +334,7 @@ section .overlay
 }
 
 .slide .item:nth-child(1),
-.slide .itemm:nth-child(2)
+.slide .item:nth-child(2)
 {
     top: 0;
     left: 0;
