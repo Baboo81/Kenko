@@ -24,6 +24,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+//logo animation :
+let logo = document.getElementById('logoAnimation');
+let largeurEcran = window.innerWidth - 100;
+let hauteurEcran = window.innerHeight - 100;
+
+setInterval(() => {
+     const x = Math.random() * largeurEcran;
+     const y = Math.random() * hauteurEcran;
+     logo.style.left = x + 'px';
+     logo.style.top = y +'px';
+}, 1000);
+
 //btn animation :
 
 let btn = document.querySelector(".button");

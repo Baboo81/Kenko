@@ -68,7 +68,6 @@ nav .nav-link
 
 nav .nav-link:hover
 {
-    color: var(--bleu);
     padding-bottom: 20px;
     border-bottom-color: var(--bleu);
 }
@@ -142,6 +141,14 @@ h1:after
     font-family: "Bodoni Moda", serif;
     font-size: 4rem;
     color: var(--noir);
+}
+
+    /* Logo animation */
+#logoAnimation
+{
+    position: absolute;
+    width: 100px;
+    z-index: -50;
 }
 
 /* END Home */
