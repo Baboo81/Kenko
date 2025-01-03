@@ -26,6 +26,7 @@ p
     line-height: 1.3em;
 }
 
+
 h3
 {
     color: white;
@@ -93,13 +94,13 @@ section .overlay
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .home
 {
     height: 1200px;
-    background-image: url(../img/jpeg/Kenko-Web/kenko-web.jpg);
+    background-image: url(../img/jpeg/Kenko-Web/KenkoWeb.svg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -126,3 +127,4 @@ section .overlay
     line-height: 1.2em;
 }
 /* END section Home */
+
