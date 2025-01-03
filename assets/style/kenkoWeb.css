@@ -128,3 +128,26 @@ section .overlay
 }
 /* END section Home */
 
+/* SectionFormule */
+section .sectionFormules
+{
+    height: 1200px;
+    background-image: url(/assets/img/jpeg/Kenko-Web/pictos/informatique.svg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+section .formulesTitle
+{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+section .offresTitle
+{
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--noir);
+}
