@@ -52,6 +52,11 @@ h3
 {
     background-color: var(--grisF);
 }
+
+.fontBolded
+{
+    font-weight: bold;
+}
 /*  Nav  */
 nav
 {
