@@ -61,6 +61,7 @@ const map = L.map('mapid').setView(centroid, 16.4);
     //Add tiles & marker:
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 L.marker([50.71036, 4.36889]).addTo(map);
+<<<<<<< HEAD
 ////////////////////////////// END /////////////////////////
 
 //Pop-up :
@@ -75,3 +76,7 @@ L.marker([50.71036, 4.36889]).addTo(map);
         document.getElementById("popUpContent").style.display = "none";
     }
 ////////////////////////////// END /////////////////////////
+=======
+
+//Pop-up :
+>>>>>>> 0eb18053631757431de94e5fb3154b6571d574c9
