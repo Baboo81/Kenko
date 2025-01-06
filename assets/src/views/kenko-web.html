@@ -82,25 +82,30 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <article class="sectionFormules">
-                            <div class="formulesTitle">
-                                <h1 class="offresTitle">Les offres personnalisables sur devis</h1>
-                            </div>
+                        <article>
+                            <h1 class="text-center my-5 fs-1 fontBlack">Les offres personnalisables sur devis</h1>
                         </article>
                     </div>
                 </div>
             </section>
             <section>
                 <div class="container">
-                    <div class="row gy-3">
+                    <div class="row gy-3 my-5">
                         <div class="col-md-4">
                             <div class="card rounded-4">
                                 <img src="/assets/img/jpeg/Kenko-Web/siteSimple.jpg" class="card-img-top rounded-top-4" alt="Image représentant une maison au milieu d'un champ">
                                 <div class="card-body text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site simple</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <button onclick="showPopup()" class="my-3">Á qui s'adresse cette offre ?</button>
                                 </div>
+                                <!-- Conteneur pop-up -->
+                                 <div class="popup-container" id="popUpContent">
+                                    <div class="popup">
+                                        <p>Bonjour les amis</p>
+                                        <button onclick="closePopup()">Fermer</button>
+                                    </div>
+                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -109,7 +114,7 @@
                                 <div class="card-body text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site vitrine</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <button onclick="showPopup()" class="my-3">Á qui s'adresse cette offre ?</button>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +124,7 @@
                                 <div class="card-body text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site XXL</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <button onclick="showPopup()" class="my-3">Á qui s'adresse cette offre ?</button>
                                 </div>
                             </div>
                         </div>
