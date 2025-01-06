@@ -203,4 +203,10 @@ button:hover
     background-color: var(--vert);
     color: var(--beige);
 }
+
+.pPopUp
+{
+    color: var(--vert);
+}
+
     /* Pop-up END */

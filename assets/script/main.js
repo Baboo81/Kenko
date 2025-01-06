@@ -66,12 +66,12 @@ L.marker([50.71036, 4.36889]).addTo(map);
 //Pop-up :
 
     //Création de la fct pour afficher le pop-up :
-    function showPopup() {
-        document.getElementById("popUpContent").style.display = "flex";
+    function showPopup(popupId) {
+        document.getElementById(popupId).style.display = "flex";
     }
 
     //Création de la fct pour fermer le pop-up :
-    function closePopup() {
-        document.getElementById("popUpContent").style.display = "none";
+    function closePopup(popupId) {
+        document.getElementById(popupId).style.display = "none";
     }
 ////////////////////////////// END /////////////////////////
