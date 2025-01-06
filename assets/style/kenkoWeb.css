@@ -136,7 +136,7 @@ section .overlay
 /* SectionFormule */
 section .sectionFormules
 {
-    height: 1200px;
+    height: 1000px;
     background-image: url(/assets/img/jpeg/Kenko-Web/pictos/informatique.svg);
     background-size: cover;
     background-position: center;
@@ -215,4 +215,16 @@ button:hover
 .pictoAtouts
 {
     height: 5em;
+}
+
+.pictoAtoutsPerso
+{
+    height: 50em;
+}
+
+section .atoutsContent
+{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
 }
