@@ -136,17 +136,13 @@ section .overlay
 /* SectionFormule */
 section .sectionFormules
 {
-    height: 800px;
+    height: 1200px;
     background-image: url(/assets/img/jpeg/Kenko-Web/pictos/informatique.svg);
     background-size: cover;
     background-position: center;
 }
 
-<<<<<<< HEAD
 .card 
-=======
-.card
->>>>>>> 0eb18053631757431de94e5fb3154b6571d574c9
 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
