@@ -93,7 +93,7 @@ section .overlay
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .home
@@ -275,7 +275,6 @@ section .overlay
 
 /* sliderSection */
 
-/* END sliderSection */
 .box1
 {
     background-image: url(../img/jpeg/Kenko-Ho/slider/Slider1.jpg);
@@ -308,9 +307,6 @@ section .overlay
 
 .sliderContent
 {
-    position: absolute;
-    top: 220%;
-    left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 600px;
@@ -416,6 +412,7 @@ section .overlay
         filter: blur(0);
     }
 }
+/* END sliderSection */
 
 /* Footer */
 footer
