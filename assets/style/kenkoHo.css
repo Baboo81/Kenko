@@ -67,7 +67,7 @@ nav .nav-link
 
 nav .nav-link:hover
 {
-    color: var(--bleu);
+    color: var(--bleu) !important;
     padding-bottom: 20px;
     border-bottom-color: var(--bleu);
 }

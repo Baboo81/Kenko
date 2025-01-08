@@ -2,27 +2,27 @@
 
 //navBar; color's switch:
 
-document.addEventListener('DOMContentLoaded', function() {
-    let navBar = document.querySelector('nav');
+//document.addEventListener('DOMContentLoaded', function() {
+  //  let navBar = document.querySelector('nav');
 
     //Pour obtenir la page actuelle:
-    let currentPage = window.location.pathname;
+    //let currentPage = window.location.pathname;
 
     //Définition de la couleur de typo en fct de la page :
-    switch (currentPage) {
-        case './index.html':
-            navBar.style.color = '#282828';
-            break;
-        case '../assets/src/views/kenko-ho.html':
-            navBar.style.color = '#f1efe9';
-            break;
-        case '../assets/src/views/kenko-web.html':
-            navBar.style.color = '#f1efe9';
-            break;
-            default:
-                navBar.style.color = '#f1efe9';
-    }
-});
+    //switch (currentPage) {
+      //  case './index.html':
+        //    navBar.style.color = '#282828';
+          //  break;
+        //case '../assets/src/views/kenko-ho.html':
+          //  navBar.style.color = '#f1efe9';
+            //break;
+        //case '../assets/src/views/kenko-web.html':
+          //  navBar.style.color = '#f1efe9';
+           // break;
+            //default:
+              //  navBar.style.color = '#f1efe9';
+   // }
+//});
 ////////////////////////////// END /////////////////////////
 
 //logo animation :
